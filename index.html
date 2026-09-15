@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Handicraft of Chattanooga | Handyman in Hixson, TN</title>
+  <meta name="description" content="Handicraft of Chattanooga — local handyman service in Hixson, Tennessee. Call Russell at (423) 394-5048 for home projects, tile work, and drywall repair." />
+  <meta name="theme-color" content="#f6f1e8" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg:#f6f1e8;
+      --surface:#ffffff;
+      --ink:#2a2118;
+      --navy:#3d2b1f;
+      --muted:#6b5c4d;
+      --wood:#8b5a2b;
+      --wood-2:#a56b34;
+      --pine:#4d6b4f;
+      --line:rgba(61,43,31,0.10);
+    }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    html { scroll-behavior:smooth; }
+    body { font-family:Inter,system-ui,sans-serif; background:var(--bg); color:var(--ink); line-height:1.55; min-height:100vh; }
+    a { color:inherit; text-decoration:none; }
+    .wrap { width:min(1120px, calc(100% - 32px)); margin:0 auto; }
+    header { position:sticky; top:0; z-index:20; background:rgba(246,241,232,0.94); backdrop-filter:blur(12px); border-bottom:1px solid var(--line); }
+    .nav { display:flex; align-items:center; justify-content:space-between; gap:18px; padding:14px 0; }
+    .brand { display:flex; align-items:center; gap:14px; min-width:0; }
+    .logo-mark {
+      flex:0 0 auto;
+      width:52px;
+      height:52px;
+      border-radius:12px;
+      display:grid;
+      place-items:center;
+      background:var(--navy);
+      color:#f6f1e8;
+      font-family:Oswald,sans-serif;
+      font-weight:700;
+      font-size:1.15rem;
+      letter-spacing:0.04em;
+    }
+    .brand-name {
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      min-width:0;
+    }
+    .brand-name .word-signal {
+      font-family:Oswald,sans-serif;
+      font-weight:700;
+      font-size:1.55rem;
+      line-height:1.05;
+      letter-spacing:0.05em;
+      color:var(--navy);
+      text-transform:uppercase;
+    }
+    .brand-name .word-meta,
+    .header-license {
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:8px;
+      color:var(--pine);
+      font-size:0.72rem;
+      font-weight:700;
+      letter-spacing:0.18em;
+      text-transform:uppercase;
+      white-space:nowrap;
+    }
+    .brand-name .word-meta { margin-top:6px; }
+    .brand-name .word-meta::before,
+    .brand-name .word-meta::after {
+      content:"";
+      width:18px;
+      height:2px;
+      background:var(--wood);
+      border-radius:2px;
+    }
+    .header-license { flex:0 0 auto; }
+    .btn { display:inline-flex; align-items:center; justify-content:center; gap:8px; border-radius:8px; padding:10px 16px; font-weight:600; font-size:0.92rem; border:1px solid transparent; transition:0.18s ease; }
+    .btn-gold { background:var(--wood); color:#fff; }
+    .btn-gold:hover { background:var(--wood-2); }
+    .btn-ghost { background:transparent; color:#fff; border-color:rgba(255,255,255,0.45); }
+    .btn-ghost:hover { border-color:#fff; }
+    .hero { position:relative; overflow:hidden; padding:48px 0 40px; }
+    .hero-grid { position:relative; display:grid; grid-template-columns:1.15fr 0.85fr; gap:36px; align-items:center; }
+    .eyebrow { color:var(--wood); font-weight:700; letter-spacing:0.16em; text-transform:uppercase; font-size:0.76rem; margin-bottom:12px; }
+    h1 { font-family:Oswald,sans-serif; font-size:clamp(2.3rem,5vw,3.8rem); line-height:1.08; text-transform:uppercase; letter-spacing:0.02em; margin-bottom:16px; color:var(--navy); }
+    h1 .h1-line { display:block; }
+    h1 .h1-line + .h1-line { margin-top:0.18em; }
+    h1 em { font-style:normal; color:var(--wood); }
+    .lede { color:var(--muted); font-size:1.05rem; max-width:54ch; margin-bottom:0; }
+    .hero-ctas { display:flex; gap:10px; flex-wrap:wrap; }
+    .card-panel { background:var(--surface); border:1px solid var(--line); border-radius:20px; padding:24px; box-shadow:0 12px 30px rgba(42,33,24,0.06); }
+    .card-panel h2 { font-family:Oswald,sans-serif; font-size:1.3rem; letter-spacing:0.04em; margin-bottom:8px; color:var(--navy); }
+    .phone-list { display:grid; gap:10px; margin:16px 0 0; }
+    .phone { display:flex; justify-content:space-between; align-items:center; background:var(--bg); border:1px solid var(--line); border-radius:12px; padding:12px 14px; }
+    .phone strong { font-size:1.05rem; color:var(--navy); }
+    .phone small { color:var(--muted); }
+    section { padding:28px 0 12px; }
+    .section-title { font-family:Oswald,sans-serif; font-size:1.8rem; letter-spacing:0.04em; text-transform:uppercase; margin-bottom:8px; color:var(--navy); }
+    .section-sub { color:var(--muted); margin-bottom:22px; max-width:62ch; }
+    .services { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; }
+    .service { background:var(--surface); border:1px solid var(--line); border-radius:16px; padding:18px; min-height:148px; }
+    .service h3 { font-size:1.02rem; margin:10px 0 6px; color:var(--navy); }
+    .service p { color:var(--muted); font-size:0.92rem; }
+    .icon { width:36px; height:36px; border-radius:10px; display:grid; place-items:center; background:rgba(139,90,43,0.12); color:var(--wood); font-size:1.1rem; }
+    .split { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:18px; }
+    .quote { background:var(--surface); border-left:3px solid var(--wood); border-radius:0 16px 16px 0; padding:18px; }
+    .quote cite { display:block; margin-top:10px; color:var(--muted); font-style:normal; font-size:0.86rem; }
+    .cta-band { margin:36px 0 8px; background:var(--navy); color:#fff; border-radius:20px; padding:28px; display:flex; justify-content:space-between; align-items:center; gap:18px; }
+    .cta-band .eyebrow { color:#e8d3b8; }
+    .cta-band .section-title { color:#fff; }
+    .cta-band .section-sub { color:#e8d3b8; }
+    footer { border-top:1px solid var(--line); margin-top:36px; padding:28px 0 40px; color:var(--muted); font-size:0.9rem; }
+    .foot { display:flex; justify-content:space-between; align-items:flex-start; gap:18px; flex-wrap:wrap; }
+    .foot a:hover { color:var(--wood); }
+    .fb-link { display:inline-flex; align-items:center; gap:8px; margin-top:8px; color:var(--navy); font-weight:600; }
+    .fb-link svg { width:18px; height:18px; fill:#1877F2; flex:0 0 auto; }
+    .fb-link:hover { color:#1877F2; }
+    @media (max-width:860px) {
+      .hero-grid, .services, .split, .cta-band { grid-template-columns:1fr; }
+      .cta-band { flex-direction:column; align-items:flex-start; }
+      h1 { font-size:2.3rem; }
+      .brand-name .word-signal { font-size:1.1rem; }
+      .header-license { font-size:0.62rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#top">
+        <div class="logo-mark" aria-hidden="true">H</div>
+        <div class="brand-name">
+          <span class="word-signal">Handicraft of Chattanooga</span>
+          <span class="word-meta">Hixson, TN</span>
+        </div>
+      </a>
+      <div class="header-license">Handyman service</div>
+    </div>
+  </header>
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow">Local handyman · Hixson & Chattanooga</p>
+          <h1><span class="h1-line">Home projects</span><span class="h1-line">done with <em>care.</em></span></h1>
+          <p class="lede">Handicraft of Chattanooga is Russell’s handyman shop in Hixson. Neighbors call for the jobs that have been sitting on the list — general construction, tile work, and drywall repair — and get work that holds up.</p>
+        </div>
+        <aside class="card-panel">
+          <h2>Need a handyman?</h2>
+          <p style="color:var(--muted)">Call or text. Weekday hours are 9:00 a.m. to 5:00 p.m.</p>
+          <div class="phone-list">
+            <a class="phone" href="tel:+14233945048"><div><small>Russell</small><br /><strong>(423) 394-5048</strong></div><span>☎</span></a>
+            <div class="phone"><div><small>Address</small><br /><strong>302 Northgate Mall Dr, Ste 232<br />Hixson, TN 37343</strong></div><span>⌂</span></div>
+          </div>
+        </aside>
+      </div>
+    </section>
+    <section class="wrap" id="services">
+      <h2 class="section-title">The work</h2>
+      <p class="section-sub">These are the jobs customers have already hired Handicraft to do. If you have something else in mind, call and ask.</p>
+      <div class="services">
+        <article class="service"><div class="icon">⌂</div><h3>General construction</h3><p>Household projects that have been put off — planned, finished, and cleaned up.</p></article>
+        <article class="service"><div class="icon">▣</div><h3>Tile work</h3><p>Tile installation done with care so the finish looks professional and lasts.</p></article>
+        <article class="service"><div class="icon">▭</div><h3>Drywall repair</h3><p>Ceiling and wall patches — including leak damage — blended so the repair disappears.</p></article>
+      </div>
+    </section>
+    <section class="wrap" id="about">
+      <div class="split">
+        <div class="card-panel">
+          <p class="eyebrow">Who we are</p>
+          <h2 class="section-title" style="font-size:1.45rem">Russell’s shop in Hixson</h2>
+          <p class="section-sub" style="margin-bottom:0">Handicraft of Chattanooga is a local handyman business, not Woodcraft of Chattanooga and not The Handi-Craftsman in Middle Tennessee. One number, one craftsman, jobs around the house.</p>
+        </div>
+        <div class="card-panel">
+          <p class="eyebrow">Hours & area</p>
+          <h2 class="section-title" style="font-size:1.45rem">Hixson, weekday hours</h2>
+          <p class="section-sub" style="margin-bottom:0">Monday–Friday 9:00 a.m.–5:00 p.m. Closed Saturday and Sunday. Based at 302 Northgate Mall Drive, Suite 232, Hixson, TN 37343. Serving Hixson and the Chattanooga area.</p>
+        </div>
+      </div>
+    </section>
+    <section class="wrap" id="reviews">
+      <h2 class="section-title">What customers say</h2>
+      <div class="split">
+        <blockquote class="quote">
+          <p>“Russell helped us with some much needed projects around our house that weve been putting off. He was responsive, professional, and kind. Overall great to work with! We are super happy with his work. I think we finally found our handyman!”</p>
+          <cite>Amelia Clay</cite>
+        </blockquote>
+        <blockquote class="quote">
+          <p>“Russell came highly recommended and was very professional in repairing my living room ceiling drywall that had some damage from an upstairs bathroom leak. He was trustworthy and did excellent work as I cannot tell where the damage was after his repair!”</p>
+          <cite>Customer review</cite>
+        </blockquote>
+        <blockquote class="quote">
+          <p>“Russell KNOWS his stuff! High quality and professional service!”</p>
+          <cite>Jack Tarpley · Tile work</cite>
+        </blockquote>
+        <blockquote class="quote">
+          <p>“Glad to have a trustworthy handyman who doesn’t cost an arm and a leg!!!”</p>
+          <cite>Early Beagles</cite>
+        </blockquote>
+      </div>
+    </section>
+    <div class="wrap">
+      <div class="cta-band">
+        <div>
+          <p class="eyebrow">Ready when you are</p>
+          <h2 class="section-title" style="margin:0">Call Russell today</h2>
+          <p class="section-sub" style="margin:8px 0 0">Weekdays 9–5. Hixson and the Chattanooga area.</p>
+        </div>
+        <div class="hero-ctas" style="margin:0">
+          <a class="btn btn-gold" href="tel:+14233945048">(423) 394-5048</a>
+          <a class="btn btn-ghost" href="https://www.facebook.com/HandicraftofChattanooga" target="_blank" rel="noopener">Facebook</a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="wrap foot">
+      <div>
+        Handicraft of Chattanooga · Hixson, TN<br />
+        <a class="fb-link" href="https://www.facebook.com/HandicraftofChattanooga" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047v-2.66c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.513c-1.491 0-1.956.93-1.956 1.886v2.265h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg>
+          Join us on Facebook
+        </a>
+      </div>
+      <div>
+        302 Northgate Mall Dr, Suite 232, Hixson, TN 37343<br />
+        &copy; <span id="y"></span> Handicraft of Chattanooga. All rights reserved.
+      </div>
+    </div>
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
