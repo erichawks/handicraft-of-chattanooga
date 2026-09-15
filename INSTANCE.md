@@ -30,3 +30,4 @@ Logo wordmark on the badge: HANDICRAFT. Badge ring: Craftsman · Handyman · Rem
 Missing: license number, Russell’s last name.
 Colors used on this instance: background `#f6f1e8`, ink/navy `#3d2b1f`, wood `#8b5a2b`, pine `#4d6b4f`. Fonts: Oswald + Inter.
 Note: production alias may show Vercel Deployment Protection / SSO until that is turned off in the Vercel project.
+Logo and email added from client 2026-09-15.
